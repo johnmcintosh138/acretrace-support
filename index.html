@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AcreTrace Support</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #1c1c1e;
+  --muted: #6b6b70;
+  --rule: #e3e3e6;
+  --tint: #2f6b3f;
+  --card: #f6f7f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131514;
+    --fg: #ececec;
+    --muted: #9a9a9f;
+    --rule: #2c2f2d;
+    --tint: #7fc48f;
+    --card: #1b1e1c;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.wrap { max-width: 44rem; margin: 0 auto; }
+
+header {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+}
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+header p { margin: 0; color: var(--muted); }
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2.5rem 0 .6rem;
+  letter-spacing: -.01em;
+}
+
+h3 { font-size: 1rem; margin: 1.75rem 0 .35rem; }
+
+p, ul, ol { margin: 0 0 1rem; }
+ul, ol { padding-left: 1.25rem; }
+li { margin-bottom: .4rem; }
+
+a { color: var(--tint); }
+
+.lede {
+  font-size: 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: .7rem;
+  padding: 1rem 1.15rem;
+}
+
+.lede p:last-child { margin-bottom: 0; }
+
+nav { margin-bottom: 2rem; font-size: .95rem; }
+nav a { margin-right: 1.1rem; }
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .9em;
+  background: var(--card);
+  padding: .1em .35em;
+  border-radius: .3em;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>AcreTrace Support</h1>
+  <p>Measure land area, distance and volume from your iPhone.</p>
+</header>
+
+<nav>
+  <a href="index.html">Support</a>
+  <a href="privacy.html">Privacy Policy</a>
+</nav>
+
+<div class="lede">
+  <p><strong>Need help, found a bug, or want to suggest a feature?</strong><br>
+  Email <a href="mailto:acretrace@gmail.com">AcreTrace@gmail.com</a>. It reaches the
+  developer directly, and you can expect a reply within a couple of days.</p>
+  <p>For a bug report, it helps to include your iPhone model, your iOS
+  version, and what you were doing when it went wrong.</p>
+</div>
+
+<h2>Getting started</h2>
+
+<h3>Adding points on the map</h3>
+<p>Press and hold on the map for a moment to drop a point — a quick tap
+won't add one. That's deliberate: a tap is far too easy to land by accident
+while you're walking a boundary with the phone in your hand.</p>
+<p>You can also tap <strong>Use my location</strong> to add a point exactly
+where you're standing, drag any point to move it, and tap a <strong>+</strong>
+marker between two points to insert a new one on that edge.</p>
+
+<h3>GPS mode vs AR mode</h3>
+<p>Use <strong>GPS mode</strong> for anything you can walk or trace on a map —
+fields, paddocks, lawns, driveways, fence lines. Use <strong>AR mode</strong>
+for small areas where GPS simply isn't precise enough, such as a patio, a
+flower bed or a single room. They're separate tools rather than two settings
+on one tool, because they're good at different jobs.</p>
+<p>AR measurements have no map position — they're distances in the space in
+front of you — so they can't be exported as GPX or KML. CSV export gives you
+the raw coordinates in metres.</p>
+
+<h3>My saved survey won't let me move anything</h3>
+<p>Opening a saved survey starts it <strong>locked</strong>, so reviewing an
+old measurement can't accidentally change it. Tap the survey's name at the
+top of the results panel to unlock it. Notes, photos and the volume
+calculator stay available either way.</p>
+
+<h2>Common questions</h2>
+
+<h3>Does it work without a signal?</h3>
+<p>Yes. Measuring, saving, the volume calculator and AR mode all work with no
+connection at all. Two things do need one: loading map imagery for an area
+you haven't visited before, and searching for a place by name.</p>
+
+<h3>Are my surveys backed up anywhere?</h3>
+<p>No — and this is worth knowing before you rely on it. Everything is stored
+on your iPhone only. There is currently no account and no cloud sync, so if
+you lose the phone or delete the app, the saved surveys go with it. If a
+measurement matters, export it and keep the file somewhere safe. Sync is the
+next major thing being worked on.</p>
+
+<h3>What's free, and what's paid?</h3>
+<ul>
+  <li><strong>Free</strong> — full GPS and AR measuring, unlimited AR
+  captures, and 5 saved GPS surveys.</li>
+  <li><strong>Pro</strong> — unlimited saved surveys, the volume calculator,
+  projects, and PDF reports.</li>
+  <li><strong>File Export</strong> — GPX, KML, CSV and shapefile export.</li>
+</ul>
+<p>Both are one-time purchases, not subscriptions. Prices are shown in your
+own currency in the app. Editing a survey you've already saved is never
+blocked, even at the free limit, and AR captures don't count towards it.</p>
+
+<h3>I bought it, then got a new phone — how do I get it back?</h3>
+<p>Sign in with the same Apple Account and install AcreTrace. Your purchase
+is recognised automatically; there's nothing to restore and no button to
+find. If it doesn't appear, force-quit and reopen the app once, then get in
+touch.</p>
+
+<h3>What files can I import?</h3>
+<p>GPX, KML, KMZ and CSV. Very long tracks are simplified as they come in, so
+that a five-thousand-point walk log stays workable on the map — the import
+summary tells you when that has happened, and the shape and area are
+preserved. Shapefiles can't be imported; if your source can also export KML,
+use that instead.</p>
+
+<h3>How accurate is it?</h3>
+<p>GPS accuracy depends on your iPhone, the sky above you and how far you are
+from buildings and trees — typically a few metres per point, which is fine
+for a field and poor for a flower bed. That's what AR mode is for. For any
+measurement with money or a boundary riding on it, treat AcreTrace as a good
+working estimate rather than a legal survey.</p>
+
+<h3>How do I delete my data?</h3>
+<p>Swipe on any saved survey to delete it. Deleting the app removes
+everything it stored, permanently and immediately.</p>
+
+<h2>Requirements</h2>
+<p>iPhone running iOS 26.5 or later. AR mode needs a device that supports
+ARKit. AcreTrace is an iPhone app; it runs on iPad in compatibility mode but
+isn't designed for that screen yet.</p>
+
+<footer>
+  <p>AcreTrace is made by John McIntosh.
+  <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</div>
+</body>
+</html>
