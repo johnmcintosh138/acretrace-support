@@ -119,9 +119,55 @@ code {
 <p>Press and hold on the map for a moment to drop a point — a quick tap
 won't add one. That's deliberate: a tap is far too easy to land by accident
 while you're walking a boundary with the phone in your hand.</p>
-<p>You can also tap <strong>Use my location</strong> to add a point exactly
-where you're standing, drag any point to move it, and tap a <strong>+</strong>
-marker between two points to insert a new one on that edge.</p>
+<p>You can also press the <strong>map pin</strong> button at the top of the
+results panel to add a point exactly where you're standing, and tap a
+<strong>+</strong> marker between two points to insert a new one on that
+edge.</p>
+<p>To move a point, tap it. A handle appears beneath it; drag the handle, and
+the point follows its tip, so your finger never hides where it's landing.
+Tap an empty part of the map to put it down. To type a point's exact
+coordinates instead, open the <strong>point list</strong> and tap the point.</p>
+
+<h3>The results panel</h3>
+<p>The panel at the bottom has three heights, changed with the arrows on
+its top edge. The tallest one shows the unit choices and a row of buttons:
+volume, export, notes, photo, project and the point list. If you're looking
+for one of those, tap the up arrow.</p>
+
+<h3>Walking a boundary</h3>
+<p>On a new, empty survey, tap <strong>Walk</strong> and walk the edge of the
+area. AcreTrace records your path as you go and shows the area and perimeter
+live. Tap <strong>Done</strong> when you're back where you started.</p>
+<ul>
+  <li>You can lock the screen and put the phone in your pocket; the walk
+  keeps recording.</li>
+  <li>Use <strong>Pause</strong> to skip a stretch you can't walk, such as a
+  pond or a hedge. When you resume, the straight line from where you paused to
+  where you are becomes that edge.</li>
+  <li>A walk needs Precise Location. If it's off, iOS asks whether to allow
+  it for the walk.</li>
+</ul>
+
+<h3>Taking out a pond or a building (cutouts)</h3>
+<p>In area mode, raise the panel to its tallest height and tap
+<strong>+ Cutout</strong>, then press and hold inside the boundary to place
+the cutout's corners. The area shown is then the boundary minus the cutout;
+the perimeter stays the outer edge. Tap <strong>Boundary</strong> to go back
+to editing the outside. A cutout drawn in orange isn't wholly inside the
+boundary, or overlaps another cutout, so it isn't taken off. Cutouts are
+part of Pro.</p>
+
+<h3>Projects</h3>
+<p>A project groups the surveys for one job, such as every bed and path on a
+landscaping site, so you can see a single total. Open
+<strong>Saved</strong>, switch to <strong>Projects</strong>, and tap
+<strong>New Project</strong>. To put a survey in one, use the project button
+on the survey itself, press and hold it in the saved list and choose
+<strong>Move to Project</strong>, or add it from inside the project.</p>
+<p>From a project you can open any of its surveys, start a new GPS or AR
+survey that's already filed in it, and use <strong>Show on Map</strong> to see
+all its GPS surveys together. Making projects and Show on Map are free; the
+combined totals and the project PDF report are part of Pro.</p>
 
 <h3>GPS mode vs AR mode</h3>
 <p>Use <strong>GPS mode</strong> for anything you can walk or trace on a map —
@@ -129,6 +175,9 @@ fields, paddocks, lawns, driveways, fence lines. Use <strong>AR mode</strong>
 for small areas where GPS simply isn't precise enough, such as a patio, a
 flower bed or a single room. They're separate tools rather than two settings
 on one tool, because they're good at different jobs.</p>
+<p>In AR mode, aim the crosshair at a corner and press the pin button to add
+a point. To move one, tap its marker, aim the crosshair where it should be,
+and press the pin again.</p>
 <p>AR measurements have no map position — they're distances in the space in
 front of you — so they can't be exported as GPX or KML. CSV export gives you
 the raw coordinates in metres.</p>
@@ -155,10 +204,11 @@ next major thing being worked on.</p>
 
 <h3>What's free, and what's paid?</h3>
 <ul>
-  <li><strong>Free</strong> — full GPS and AR measuring, unlimited AR
-  captures, and 5 saved GPS surveys.</li>
+  <li><strong>Free</strong> — full GPS and AR measuring, walking a
+  boundary, unlimited AR captures, 5 saved GPS surveys, and grouping surveys
+  into projects.</li>
   <li><strong>Pro</strong> — unlimited saved surveys, the volume calculator,
-  projects, and PDF reports.</li>
+  cutouts, project totals, and PDF reports.</li>
   <li><strong>File Export</strong> — GPX, KML, CSV and shapefile export.</li>
 </ul>
 <p>Both are one-time purchases, not subscriptions. Prices are shown in your
@@ -175,7 +225,8 @@ touch.</p>
 <p>GPX, KML, KMZ and CSV. Very long tracks are simplified as they come in, so
 that a five-thousand-point walk log stays workable on the map — the import
 summary tells you when that has happened, and the shape and area are
-preserved. Shapefiles can't be imported; if your source can also export KML,
+preserved. Holes in a KML shape, and cutouts in a CSV that AcreTrace
+exported, come back in as cutouts. Shapefiles can't be imported; if your source can also export KML,
 use that instead.</p>
 
 <h3>How accurate is it?</h3>
@@ -186,7 +237,8 @@ measurement with money or a boundary riding on it, treat AcreTrace as a good
 working estimate rather than a legal survey.</p>
 
 <h3>How do I delete my data?</h3>
-<p>Swipe on any saved survey to delete it. Deleting the app removes
+<p>Swipe left on any saved survey, or press and hold it and choose
+<strong>Delete</strong>. Deleting the app removes
 everything it stored, permanently and immediately.</p>
 
 <h2>Requirements</h2>
