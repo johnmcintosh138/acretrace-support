@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Land Measurement Apps for iPhone, Compared</title>
+<meta name="description" content="Eight iPhone apps for measuring land area and distance, compared: what each is good at, what it costs, and where it falls short. Checked 14 September 2026.">
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #1c1c1e;
+  --muted: #6b6b70;
+  --rule: #e3e3e6;
+  --tint: #2f6b3f;
+  --card: #f6f7f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131514;
+    --fg: #ececec;
+    --muted: #9a9a9f;
+    --rule: #2c2f2d;
+    --tint: #7fc48f;
+    --card: #1b1e1c;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.wrap { max-width: 44rem; margin: 0 auto; }
+
+header {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+}
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+header p { margin: 0; color: var(--muted); }
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2.5rem 0 .6rem;
+  letter-spacing: -.01em;
+}
+
+h3 { font-size: 1rem; margin: 1.75rem 0 .35rem; }
+
+p, ul, ol { margin: 0 0 1rem; }
+ul, ol { padding-left: 1.25rem; }
+li { margin-bottom: .4rem; }
+
+a { color: var(--tint); }
+
+.lede {
+  font-size: 1.05rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: .7rem;
+  padding: 1rem 1.15rem;
+}
+
+.lede p:last-child { margin-bottom: 0; }
+
+nav { margin-bottom: 2rem; font-size: .95rem; }
+nav a { margin-right: 1.1rem; }
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* The comparison table is the one thing wider than a phone; it scrolls on
+   its own rather than making the page scroll sideways. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 1rem 0 .5rem;
+  border: 1px solid var(--rule);
+  border-radius: .7rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 40rem;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: .55rem .7rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+th {
+  background: var(--card);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+tbody tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.dim { color: var(--muted); }
+.note { color: var(--muted); font-size: .9rem; }
+
+.app h2 { margin-bottom: .15rem; }
+.app .by { color: var(--muted); font-size: .95rem; margin: 0 0 .7rem; }
+.app dl { margin: 0 0 1rem; }
+.app dt { font-weight: 600; margin-top: .6rem; }
+.app dd { margin: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Land measurement apps for iPhone, compared</h1>
+  <p>Eight apps for measuring acreage and distance: what each is good at, what
+  it costs, and where it falls short. Checked 14 September 2026.</p>
+</header>
+
+<nav>
+  <a href="index.html">Support</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="land-measurement-apps.html">Compare apps</a>
+</nav>
+
+<div class="lede">
+  <p><strong>AcreTrace is our app, so read this knowing that.</strong>
+  Everything said about the other apps comes from their own App Store listings
+  or from our hands-on testing, and says which. Each has a link so you can
+  check for yourself.</p>
+  <p>Prices are US App Store prices on 14 September 2026. They vary by country
+  and change often.</p>
+</div>
+
+<h2>The short version</h2>
+<ul>
+  <li><strong>The most established app for walking a field:</strong>
+  GPS Fields Area Measure Map.</li>
+  <li><strong>Cutting ponds or buildings out of an area, plus circles:</strong>
+  FieldCalc. Measure Map Pro and AcreTrace also do cutouts.</li>
+  <li><strong>Property lines and who owns the land (US):</strong> Land id.
+  It's a property research tool more than a measuring one.</li>
+  <li><strong>Paying once, with no subscription:</strong> Planimeter, Measure
+  Map, Measure Map Pro or AcreTrace.</li>
+  <li><strong>The widest range of file formats, including CAD:</strong>
+  Measure Map Pro.</li>
+  <li><strong>Working out how much topsoil or gravel an area needs, or
+  measuring a patio with the camera:</strong> AcreTrace. None of the other
+  listings mention volume or camera measuring.</li>
+</ul>
+
+<h2>At a glance</h2>
+<div class="table-scroll">
+<table>
+  <thead>
+    <tr>
+      <th>App</th>
+      <th>Ratings</th>
+      <th>Pricing</th>
+      <th>Walk a boundary</th>
+      <th>Cutouts</th>
+      <th>Files out</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPS Fields Area Measure Map</td>
+      <td class="num">12,694 · 4.6</td>
+      <td>Subscription</td>
+      <td>Yes; kept recording with the screen locked <span class="dim">(tested)</span></td>
+      <td>Yes <span class="dim">(tested)</span></td>
+      <td>KML, KMZ, shapefile</td>
+    </tr>
+    <tr>
+      <td>FieldCalc</td>
+      <td class="num">10,242 · 4.5</td>
+      <td>Subscription</td>
+      <td>Yes; stopped while the screen was locked <span class="dim">(tested)</span></td>
+      <td>Yes <span class="dim">(tested)</span></td>
+      <td>11 formats, incl. shapefile, DXF, GeoJSON <span class="dim">(tested)</span></td>
+    </tr>
+    <tr>
+      <td>Measure Map</td>
+      <td class="num">5,294 · 4.7</td>
+      <td>Free with ads; one-time upgrades</td>
+      <td class="dim">Not in listing</td>
+      <td class="dim">Not in listing</td>
+      <td>KML, KMZ, CSV</td>
+    </tr>
+    <tr>
+      <td>Marea</td>
+      <td class="num">4,732 · 4.5</td>
+      <td>Subscription or lifetime</td>
+      <td>Yes</td>
+      <td class="dim">Not in listing</td>
+      <td>KML, PDF, map image</td>
+    </tr>
+    <tr>
+      <td>Land id</td>
+      <td class="num">4,115 · 4.6</td>
+      <td>Subscription, from $84 a year</td>
+      <td>GPS tracking</td>
+      <td class="dim">Not in listing</td>
+      <td>CSV reports</td>
+    </tr>
+    <tr>
+      <td>Planimeter</td>
+      <td class="num">2,213 · 4.7</td>
+      <td>$7.99 upfront; optional subscription</td>
+      <td class="dim">Not in listing</td>
+      <td class="dim">Not in listing</td>
+      <td class="dim">Not in listing</td>
+    </tr>
+    <tr>
+      <td>Measure Map Pro</td>
+      <td class="num">829 · 4.6</td>
+      <td>One-time upgrades</td>
+      <td class="dim">Not in listing</td>
+      <td>Yes</td>
+      <td>KML, KMZ, CSV, GPX, DXF, shapefile, PDF, image</td>
+    </tr>
+    <tr>
+      <td>AcreTrace <span class="dim">(ours)</span></td>
+      <td class="num dim">New</td>
+      <td>Free, then one-time purchases</td>
+      <td>Yes, with the screen locked</td>
+      <td>Yes (Pro)</td>
+      <td>GPX, KML, CSV, shapefile, PDF</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p class="note">Ratings are the number of US App Store ratings and the
+average. <strong>Not in listing</strong> means the app's App Store description
+doesn't mention it; the app may still do it. <strong>Tested</strong> means we
+checked it in the app ourselves.</p>
+
+<section class="app">
+  <h2>GPS Fields Area Measure Map</h2>
+  <p class="by">Rento UAB · 12,694 ratings, 4.6 ·
+  <a href="https://apps.apple.com/us/app/gps-fields-area-measure-map/id1123033235">App Store</a></p>
+  <dl>
+    <dt>Good at</dt>
+    <dd>The most-rated app in the category. You can walk or drive a boundary,
+    and in our walking test it kept recording accurately with the phone locked.
+    Its listing says it works fully offline, exports KML, KMZ and shapefile,
+    and offers cloud storage with Premium. Tapping any figure shows it in
+    every unit.</dd>
+    <dt>Cost</dt>
+    <dd>Subscription only. When we tested it in September, the app offered
+    $14.99 a month or $69.99 a year after a 7-day trial. Photos, groups,
+    editing tools, export and sync sit behind it. The App Store page lists
+    several other plans.</dd>
+  </dl>
+</section>
+
+<section class="app">
+  <h2>FieldCalc – GPS Area Measure</h2>
+  <p class="by">Pravin Gondaliya · 10,242 ratings, 4.5 ·
+  <a href="https://apps.apple.com/us/app/fieldcalc-gps-area-measure/id1238984272">App Store</a></p>
+  <dl>
+    <dt>Good at</dt>
+    <dd>Taking ponds, buildings and other areas out of a measurement, which its
+    listing leads with. It also measures circles from a centre and radius, lets
+    you walk or tap out a shape, and exports to 11 formats, including
+    shapefile, DXF and GeoJSON.</dd>
+    <dt>Cost</dt>
+    <dd>Subscription. When we tested it in September, the app offered $19.99
+    a month or $49.99 a year. The App Store page also lists one-time purchases,
+    but the app itself offered only the subscription.</dd>
+    <dt>Worth knowing</dt>
+    <dd>In our test, the free version kept two saved measurements of each type,
+    and deleting one didn't free the slot. Locking the phone partway through a
+    walk lost the position until it was unlocked.</dd>
+  </dl>
+</section>
+
+<section class="app">
+  <h2>Measure Map</h2>
+  <p class="by">Xuan Luong Do · 5,294 ratings, 4.7 ·
+  <a href="https://apps.apple.com/us/app/measure-map/id1247360674">App Store</a></p>
+  <dl>
+    <dt>Good at</dt>
+    <dd>One of the best-rated apps here. It imports and exports KML, KMZ and
+    CSV files.</dd>
+    <dt>Cost</dt>
+    <dd>Free with ads. One-time upgrades: Pro for $7.99, file export for
+    $5.99, and ad removal for $5.99. No subscription.</dd>
+  </dl>
+</section>
+
+<section class="app">
+  <h2>Map Area Calculator – Marea</h2>
+  <p class="by">Applorium Ltd · 4,732 ratings, 4.5 ·
+  <a href="https://apps.apple.com/us/app/map-area-calculator-marea/id1185905221">App Store</a></p>
+  <dl>
+    <dt>Good at</dt>
+    <dd>Walking a perimeter, dropping pins automatically as you go. Its listing
+    also covers checking property lines and lot sizes, and exporting KML, PDF or
+    a map image.</dd>
+    <dt>Cost</dt>
+    <dd>Subscription, from $7.99 a month, with yearly plans listed at $19.99
+    and $39.99. It also lists a $39.99 lifetime purchase.</dd>
+  </dl>
+</section>
+
+<section class="app">
+  <h2>Land id</h2>
+  <p class="by">MapRight, LLC · 4,115 ratings, 4.6 ·
+  <a href="https://apps.apple.com/us/app/land-id/id1173937731">App Store</a></p>
+  <dl>
+    <dt>Good at</dt>
+    <dd>A different job: property research. It shows parcel boundaries and
+    ownership data across the US, and offers offline maps, GPS tracking for
+    fieldwork, and CSV reports of property and owner data.</dd>
+    <dt>Cost</dt>
+    <dd>Subscription. Its listing starts at $84 a year and goes up to $799.99
+    a year for Pro Unlimited.</dd>
+    <dt>Worth knowing</dt>
+    <dd>If you need to know where a property line is or who owns the land next
+    door, this is the tool. For measuring your own field or yard, it's more
+    than you need.</dd>
+  </dl>
+</section>
+
+<section class="app">
+  <h2>Planimeter – Measure Land Area</h2>
+  <p class="by">Core Signals LLC · 2,213 ratings, 4.7 ·
+  <a href="https://apps.apple.com/us/app/planimeter-measure-land-area/id423492040">App Store</a></p>
+  <dl>
+    <dt>Good at</dt>
+    <dd>On the App Store since 2011, with the highest average rating on this
+    page. You pay once to own it.</dd>
+    <dt>Cost</dt>
+    <dd>$7.99 upfront. An optional Pro subscription adds more satellite map
+    sources.</dd>
+    <dt>Worth knowing</dt>
+    <dd>Its listing is short and doesn't mention walking a boundary, cutouts
+    or file export, so check it does what you need.</dd>
+  </dl>
+</section>
+
+<section class="app">
+  <h2>Measure Map Pro</h2>
+  <p class="by">Blue Blink One, SL · 829 ratings, 4.6 ·
+  <a href="https://apps.apple.com/us/app/measure-map-pro/id443823801">App Store</a></p>
+  <dl>
+    <dt>Good at</dt>
+    <dd>The widest file support here. It exports KML, KMZ, CSV, DXF for
+    AutoCAD, shapefile, GPX, PDF and images, and imports KML, KMZ and GPX. It
+    can also cut holes out of a shape, and it supports iPad.</dd>
+    <dt>Cost</dt>
+    <dd>Free, with one-time upgrades: $4.99 for the Regular version, $30.99 for
+    Pro, and $28.99 for an extra maps package.</dd>
+  </dl>
+</section>
+
+<section class="app">
+  <h2>AcreTrace <span class="dim">(ours)</span></h2>
+  <p class="by">John McIntosh · New, no ratings yet · Coming to the App Store</p>
+  <dl>
+    <dt>Good at</dt>
+    <dd>Working out how much material an area needs: enter a depth and it gives
+    the volume, with an allowance for settling and waste. For patios and beds
+    too small for GPS, the camera measures in AR, free. You can also walk a
+    boundary with the screen locked, cut ponds or buildings out of an area,
+    group surveys into projects with combined totals, and produce PDF reports.
+    It imports GPX, KML, KMZ and CSV. No account needed.</dd>
+    <dt>Cost</dt>
+    <dd>Free for AR and for up to five saved GPS surveys. Pro is a one-time
+    $9.99 for unlimited saves, volume, cutouts, project totals and PDF reports.
+    File Export is a one-time $4.99 for GPX, KML, CSV and shapefile. No
+    subscription.</dd>
+    <dt>Where it falls short</dt>
+    <dd>It's new, so there are no reviews to go on yet. There's no cloud sync
+    or backup, so a lost phone means lost surveys. It has no property lines.
+    Measuring works without a signal, but map imagery may not load. It's
+    iPhone only, and in English only.</dd>
+  </dl>
+</section>
+
+<h2>Are they accurate?</h2>
+<p>About as accurate as each other. In September we walked the same field
+boundary with AcreTrace, FieldCalc and GPS Fields. The three areas came out
+between 19,630 and 19,721 m², within half a percent of each other. Along a
+750 m boundary, that's like walking the line about 11 cm further out, far
+less than a phone's GPS can be off by. The phone sets the accuracy far more
+than the app does. For anything with money or a legal
+boundary riding on it, use a survey, not a phone.</p>
+
+<h2>How we checked</h2>
+<ul>
+  <li>Ratings, descriptions and in-app purchase lists were read from the US
+  App Store on 14 September 2026.</li>
+  <li>FieldCalc and GPS Fields were tested by hand with their paid features
+  unlocked, on 10 September 2026, including the walk above.</li>
+  <li>The other apps weren't tested by hand. What's said about them comes from
+  their listings.</li>
+</ul>
+<p>Spotted something wrong or out of date? Email
+<a href="mailto:acretrace@gmail.com">AcreTrace@gmail.com</a> and it will be
+corrected.</p>
+
+<footer>
+  <p>AcreTrace is made by John McIntosh. App names belong to their
+  developers. <a href="index.html">Support</a> ·
+  <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</div>
+</body>
+</html>
