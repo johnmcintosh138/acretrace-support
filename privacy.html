@@ -97,7 +97,7 @@ code {
 
 <header>
   <h1>AcreTrace Privacy Policy</h1>
-  <p>Last updated 13 September 2026</p>
+  <p>Last updated 13 October 2026</p>
 </header>
 
 <nav>
@@ -132,9 +132,17 @@ in the app removes it. Deleting the app removes everything at once.</p>
 <p>With your permission, AcreTrace reads your location while you're using it,
 so it can add a measurement point where you're standing and show your
 position on the map.</p>
-<p>If you start a walk to record a boundary, AcreTrace also keeps reading
-your location from the moment you start until you finish or discard that
-walk, including while it's paused and with the screen locked, so the walk
+<p>When you first save a survey measured with the camera (AR), AcreTrace
+also records where you were when you saved it &mdash; a latitude, a
+longitude and how accurate that reading was &mdash; and keeps it with the
+survey, so you can see the survey on a map and get directions back to it.
+It uses the same permission and never asks for it from the camera screen.
+If location is off, or no precise reading is available, the survey is saved
+without one. It records the place you stood, not the shape you measured, and
+deleting the survey deletes it.</p>
+<p>If you start Live Trace to record a boundary as you walk it, AcreTrace
+also keeps reading your location from the moment you start until you finish
+or discard that walk, including while it's paused and with the screen locked, so the walk
 isn't cut short when you put your phone in your pocket. iOS shows its
 location indicator while this is happening. AcreTrace never asks for
 &ldquo;Always&rdquo; location access and never starts reading your location
@@ -162,7 +170,11 @@ name, the text you type is sent to Apple to answer the search. That exchange
 is between you and Apple and is covered by
 <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>;
 Apple states that MapKit does not associate this data with an Apple Account.
-Your survey points, notes and photos are never part of it — they are not sent
+The app also asks MapKit for still map images &mdash; the satellite picture
+behind a PDF report, and the small map on an AR survey's page &mdash; which,
+like viewing the map, tells Apple which area to draw. Tapping Directions, or that small map, hands
+the saved spot to Apple Maps. Your survey points, notes and photos are never
+part of any of this — they are not sent
 to Apple or anyone else.</p>
 
 <h2>Purchases</h2>
@@ -177,7 +189,8 @@ unlocks the feature if so. Refunds and receipts are handled by Apple.</p>
 is created on your device and handed to iOS's share sheet. Where it goes from
 there — Files, Mail, another app, a cloud drive — is your choice, and once it
 leaves it is subject to that destination's own privacy terms. AcreTrace does
-not send it anywhere on its own.</p>
+not send it anywhere on its own. A PDF report of an AR survey prints
+where that survey was saved, if it has a recorded location.</p>
 
 <h2>Third parties</h2>
 <p>There are none. AcreTrace contains no analytics SDK, no advertising SDK,
